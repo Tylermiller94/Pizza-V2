@@ -30,25 +30,23 @@ Pizza.prototype.getSizeCost = function(size, toppings) {
 $(document).ready(function(){
   $("input#delivery").click(function(){
     $("#delivery-address").show();
-  })
-
-
+  });
   $("form#form-pizza").submit(function(event){
-    var toppings = [];
-    var cost = 0;
-    var size = $("select#size").val();
-    var orderType = $('input[name=orderType]').val();
+  var toppings = [];
+  var cost = 0;
+  var size = $("select#size").val();
+  var orderType = $('input[name=orderType]').val();
     $("input:checkbox[name=topping]:checked").each(function() {
       toppings.push($(this).val());
-        event.preventDefault();
+      event.preventDefault();
     });
 
     var orderedPizza = new Pizza(size, toppings, cost);
 
     orderedPizza.getSizeCost();
     $("#complete-order").append("$" + orderedPizza.cost +
-      "<br>Selected size: <p>"  +  orderedPizza.size +
-      "</p>Selected toppings: <p>" + orderedPizza.toppings);
+    "<br>Selected size: <p>"  +  orderedPizza.size +
+    "</p>Selected toppings: <p>" + orderedPizza.toppings);
 
     $("#complete-order").show();
     $(".form-container").hide();
