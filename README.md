@@ -15,15 +15,15 @@ This site will allow a user to choose a custom pizza with variables of size and 
 * Open Index.html in Chrome
 
 ## Specifications
-*User can select a size for the pizza, with a return in cost
-*Example input: Small
-*Example output: $8
+* User can select a size for the pizza, with a return in cost
+* Example input: Small
+* Example output: $8
 
-*User can select toppings for their pizza which will add $1 to the cost of the pizza.
-*Example input: Small pizza with Bacon
-*Example output: $9
-*Example input: small pizza with Bacon and pineapple
-*Example output: $10
+* User can select toppings for their pizza which will add $1 to the cost of the pizza.
+* Example input: Small pizza with Bacon
+* Example output: $9
+* Example input: small pizza with Bacon and pineapple
+* Example output: $10
 
 If user selects delivery option a form will appear for them to enter their personal address info.
 
