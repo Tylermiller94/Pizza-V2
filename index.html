@@ -16,88 +16,76 @@
       <div class="form-container">
         <form id="form-pizza">
           <h2>Place your order</h2>
-
-
-              <div class="form-group">
-                <label for="size" class="choices">Select a size:</label>
-                <select class="form-control" id="size">
-                  <option value="Small">Small $8</option>
-                  <option value="Medium">Medium $10</option>
-                  <option value="Large">Large $12</option>
-                </select>
-              </div>
-
-
-              <div class="form">
-                <label for="toppings" class="choices">Select Toppings (Each topping is $1):</label>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="topping" value=" Pepperoni">Pepperoni</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="topping" value = "Bacon">Bacon</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="topping" value = "Sausage">Sausage</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="topping" value = "Red Peppers">Red Peppers</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="topping" value = "Pineapple">Pineapple</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="topping" value = "Mushrooms">Mushrooms</label>
-                  </div>
-                </div>
-
-
           <div class="form-group">
-            <label for="orderType" class=" label choices">Delivery Method:</label>
+            <label for="size" class="choices">Select a size:</label>
+            <select class="form-control" id="size">
+              <option value="Small">Small $8</option>
+              <option value="Medium">Medium $10</option>
+              <option value="Large">Large $12</option>
+            </select>
+          </div>
+          <div class="form">
+            <label for="toppings" class="choices">Select Toppings (Each topping is $1):</label>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value=" Pepperoni">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value = "Bacon">Bacon</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value = "Sausage">Sausage</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value = "Red Peppers">Red Peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value = "Pineapple">Pineapple</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="topping" value = "Mushrooms">Mushrooms</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="orderType" class=" choices">Delivery Method:</label>
             <br>
             <label class="radio">
-              <input id="delivery" name="orderType" type="radio" class="input" value="delivery">
+              <input id="delivery" type="radio" class="input" value="delivery">
               <span class="description">Delivery</span>
             </label>
-
             <label class="radio">
-              <input id="pickup" name="orderType" type="radio" class="input" value="pickup">
+              <input id="pickup" type="radio" class="input" value="pickup">
               <span class="  indicator"></span>
               <span class="  description">Pickup</span>
             </label>
           </div>
-
           <div id="delivery-address">
             <h4>Please enter your address information:</h4>
             <div class="form-group">
               <label for="fullName">Full Name</label>
               <input type="text" class="form-control" id="full-name">
             </div>
-
             <div class="form-group">
               <label for="street">Street Address</label>
               <input type="text" class="form-control" id="street">
             </div>
             <div class="form-group">
               <label for="city">City</label>
-              <input type="text" class="form-control" id="city">
-            </div>
-            <div class="form-group">
-              <label for="zip">Zip Code</label>
-              <input type="text" class="form-control" id="zip">
-            </div>
+            <input type="text" class="form-control" id="city">
           </div>
-
-
-          <button type="submit" class ="btn">Order!</button>
-        </form>
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" class="form-control" id="zip">
+          </div>
         </div>
-        <div id="complete-order">
-          <h2>Thank you for placing your order with us!</h2>
-          <span id="customer-address"></span>
-          <br>
-          <h4>Your total is:</h4>
-        </div>
-      </div>
-
+        <button type="submit" class ="btn">Order!</button>
+      </form>
+    </div>
+    <div id="complete-order">
+      <h2>Thank you for placing your order with us!</h2>
+      <span id="customer-address"></span>
+      <br>
+      <h4>Your total is:</h4>
+    </div>
+  </div>
   </body>
 </html>
